@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27512.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata001", "Kata001\Kata001.csproj", "{02B9B36D-5DC3-430A-A470-F8A28CDFD86B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata001", "Kata001\Kata001.csproj", "{02B9B36D-5DC3-430A-A470-F8A28CDFD86B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57B62D38-40CD-46E4-B328-3AD2025EB336}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
