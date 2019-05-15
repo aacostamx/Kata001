@@ -4,6 +4,9 @@ namespace Kata001.Services
 {
     public class ClientService : IClientService
     {
+        public ClientService()
+        {
 
+        }
     }
 }
