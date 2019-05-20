@@ -13,12 +13,20 @@ namespace Kata001.UnitTest
 
         public List<string> Sources { get; set; }
 
+        public List<ApiResponse> ApiResponse { get; set; }
+
         public KataTest()
         {
             Sources = new List<string>()
             {
                 "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
                 "http://www.mocky.io/v2/5b5f00962e00009a0a694782"
+            };
+
+            ApiResponse = new List<ApiResponse>()
+            {
+                new ApiResponse { Temp = 100, Source = "https://www.4thsource.com/" },
+                new ApiResponse { Temp = 101, Source = "https://www.anglobal.com/en/" }
             };
         }
 
@@ -47,6 +55,32 @@ namespace Kata001.UnitTest
             Assert.IsNotType<DateTime>(nowUTC);
             Assert.NotEqual(nowUTC, clock.NowUTC);
             Assert.IsAssignableFrom<DateTimeOffset>(nowUTC);
+        }
+
+        [Fact]
+        public void Get_Headers()
+        {
+            IFileService fileService = new FileService();
+
+            string headers = fileService.Headers;
+
+            Assert.NotNull(headers);
+            Assert.NotEmpty(headers);
+            Assert.IsAssignableFrom<string>(headers);
+            Assert.Equal(headers, fileService.Headers);
+        }
+
+        [Fact]
+        public void Get_File_Name()
+        {
+            IFileService fileService = new FileService();
+
+            string fileName = fileService.FileName;
+
+            Assert.NotNull(fileName);
+            Assert.NotEmpty(fileName);
+            Assert.IsAssignableFrom<string>(fileName);
+            Assert.Contains(fileName, fileService.FileName);
         }
 
     }
