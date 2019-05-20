@@ -10,6 +10,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{D8C7EDCA-929F-4489-96CC-BE1C982CDA67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{BAA9095A-82FC-4A77-9BA5-4BEFD009A650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata001.UnitTest", "Kata001.UnitTest\Kata001.UnitTest.csproj", "{9B9D6206-C755-4019-8BF1-2CBFCCC0B524}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +26,17 @@ Global
 		{02B9B36D-5DC3-430A-A470-F8A28CDFD86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B9B36D-5DC3-430A-A470-F8A28CDFD86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B9B36D-5DC3-430A-A470-F8A28CDFD86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B9D6206-C755-4019-8BF1-2CBFCCC0B524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9D6206-C755-4019-8BF1-2CBFCCC0B524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9D6206-C755-4019-8BF1-2CBFCCC0B524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9D6206-C755-4019-8BF1-2CBFCCC0B524}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02B9B36D-5DC3-430A-A470-F8A28CDFD86B} = {BAA9095A-82FC-4A77-9BA5-4BEFD009A650}
+		{9B9D6206-C755-4019-8BF1-2CBFCCC0B524} = {D8C7EDCA-929F-4489-96CC-BE1C982CDA67}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E177F87D-8640-45DE-ABAA-A74CDF4D0EE2}
