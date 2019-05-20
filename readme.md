@@ -8,7 +8,7 @@ Covers the "S" in SOLID, Not Invented Here (NIH), Date time modeling issues, and
 A class should have only a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class. It would lead into a new desing because the logic is inside the program class
 
 - One class in the example is one of the most misused in the .net framework, which do you think it is? What is the story in .net core?
-HttpClient error is the most misused
+HttpClient error is the most misused class
 DateTime.Now is a very problematic way of retrieving the current date and time, and you should—almost—never use it.
 https://blog.submain.com/datetime-now-usage-examples/
 
