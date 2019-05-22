@@ -9,13 +9,15 @@ namespace Kata001.Services
 {
     public class ClientService : IClientService
     {
+        private static readonly HttpClientHandler ClientHandler = new HttpClientHandler();
+
         public async Task<List<ApiResponse>> GetMultipleResponsesAsync(List<string> sources)
         {
             var responses = new List<ApiResponse>();
 
             try
             {
-                using (var client = new HttpClient())
+                using (var client = new HttpClient(ClientHandler, false))
                 {
                     foreach (var url in sources)
                     {

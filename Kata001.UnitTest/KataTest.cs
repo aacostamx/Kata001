@@ -20,6 +20,16 @@ namespace Kata001.UnitTest
             Sources = new List<string>()
             {
                 "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
+                "http://www.mocky.io/v2/5b5f00962e00009a0a694782",
+                "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
+                "http://www.mocky.io/v2/5b5f00962e00009a0a694782",
+                "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
+                "http://www.mocky.io/v2/5b5f00962e00009a0a694782",
+                "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
+                "http://www.mocky.io/v2/5b5f00962e00009a0a694782",
+                "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
+                "http://www.mocky.io/v2/5b5f00962e00009a0a694782",
+                "http://www.mocky.io/v2/5b5f00232e00009a0a69477e",
                 "http://www.mocky.io/v2/5b5f00962e00009a0a694782"
             };
 
@@ -41,7 +51,7 @@ namespace Kata001.UnitTest
 
             // Assert
             Assert.NotNull(response.Result);
-            Assert.Equal(2, response.Result.Count);
+            Assert.Equal(Sources.Count, response.Result.Count);
             Assert.IsAssignableFrom<List<ApiResponse>>(response.Result);
         }
 
